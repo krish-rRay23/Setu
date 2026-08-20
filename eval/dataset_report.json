@@ -1,0 +1,21 @@
+{
+  "num_events": 800,
+  "seed": 42,
+  "clean_count": 560,
+  "ambiguous_count": 240,
+  "category_distribution": {
+    "BANK_TRANSIENT": 155,
+    "INSUFFICIENT_FUNDS": 125,
+    "RISK_BLOCK": 252,
+    "CUSTOMER_ABANDONMENT": 108,
+    "SESSION_EXPIRED": 97,
+    "UNKNOWN": 63
+  },
+  "ambiguity_distribution": {
+    "clean": 560,
+    "high_risk_burst": 63,
+    "bank_downtime": 55,
+    "sparse_unknown": 63,
+    "conflicting_signal": 59
+  }
+}

@@ -1,0 +1,6 @@
+System,Ledger Safety Active,Concurrent Attempts,Duplicate External Actions,Duplicate Rate (%),Verdict
+Baseline 1: Always Retry,NO,10,9,90.00%,FAIL (Duplicate Charges Created)
+Baseline 2: Static Rules,NO,10,9,90.00%,FAIL (Duplicate Charges Created)
+Baseline 3: Classifier Only,NO,10,9,90.00%,FAIL (Duplicate Charges Created)
+Ablation B: Rules + Gemini,NO,10,9,90.00%,FAIL (Duplicate Charges Created)
+Full Setu,YES (Write-Ahead Unique Key),20,0,0.00%,PASS (Zero Duplicate Charges)

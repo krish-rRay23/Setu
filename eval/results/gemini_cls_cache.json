@@ -1,0 +1,57 @@
+{
+  "payment_failed_normal_1_0.05": {
+    "category": "UNKNOWN",
+    "confidence": 0.4,
+    "evidence": [
+      "error_description: Payment failed without detailed diagnostics",
+      "error_code: payment_failed",
+      "bank: UNKNOWN_BANK"
+    ],
+    "abstain": true,
+    "source": "llm"
+  },
+  "BAD_REQUEST_ERROR_rapid_burst_2_0.05": {
+    "category": "RISK_BLOCK",
+    "confidence": 0.88,
+    "evidence": [
+      "rapid_burst timing pattern",
+      "high value transaction",
+      "repeat attempt count of 2"
+    ],
+    "abstain": false,
+    "source": "llm"
+  },
+  "payment_failed_rapid_burst_4_0.1": {
+    "category": "RISK_BLOCK",
+    "confidence": 0.85,
+    "evidence": [
+      "rapid_burst timing pattern",
+      "4 repeat attempts",
+      "generic failure code with high frequency attempts"
+    ],
+    "abstain": false,
+    "source": "llm"
+  },
+  "GATEWAY_ERROR_correlated_downtime_1_0.65": {
+    "category": "BANK_TRANSIENT",
+    "confidence": 0.95,
+    "evidence": [
+      "Generic gateway failure during peak bank outage",
+      "correlated_downtime",
+      "recent_bank_failure_rate: 0.65"
+    ],
+    "abstain": false,
+    "source": "llm"
+  },
+  "payment_failed_rapid_burst_3_0.1": {
+    "category": "RISK_BLOCK",
+    "confidence": 0.9,
+    "evidence": [
+      "rapid_burst timing pattern",
+      "3 repeat attempts",
+      "high frequency attempts in error description"
+    ],
+    "abstain": false,
+    "source": "llm"
+  }
+}

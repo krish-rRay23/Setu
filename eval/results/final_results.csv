@@ -1,0 +1,6 @@
+Approach,Gross Recovered (INR),Penalties (INR),Net Recovered (INR),Net Recovery per 100 Events (INR),Recovery Rate (%),False-Retry Rate (%),Unsafe Actions Count,Escalation Precision (%),Honest Abstention Rate (%),Overall Accuracy,Ambiguous Subset Acc,Overall F1,Ambiguous Subset F1,Avg Latency (ms)
+Baseline 1: Always Retry,412000.0,396600.0,15400.0,1925.0,9.38,31.5,363,0.0,N/A,N/A,N/A,N/A,N/A,0.002
+Baseline 2: Static Rules,2692000.0,348000.0,2344000.0,293000.0,32.38,26.75,325,100.0,N/A,N/A,N/A,N/A,N/A,0.002
+Baseline 3: Classifier Only,755500.0,27000.0,728500.0,91062.5,17.25,0.0,27,100.0,100.0,100.00%,100.00%,1.0000,1.0000,0.003
+Ablation B: Rules + Gemini,755500.0,27000.0,728500.0,91062.5,17.25,0.0,27,100.0,100.0,100.00%,100.00%,1.0000,1.0000,0.003
+Full Setu,2223000.0,1500.0,2221500.0,277687.5,38.88,0.0,0,100.0,100.0,100.00%,100.00%,1.0000,1.0000,0.003
