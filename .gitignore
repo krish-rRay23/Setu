@@ -1,0 +1,26 @@
+# Secrets — never commit
+.env
+
+# Python runtime
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Database files
+*.db
+
+# OS / IDE junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+
+# Antigravity / IDE workspace files
+.agents/
+.gemini/
+
+# Temporary eval scratch
+eval/check_csv.py
