@@ -24,3 +24,5 @@ Thumbs.db
 
 # Temporary eval scratch
 eval/check_csv.py
+
+*.ps1
